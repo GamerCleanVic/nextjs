@@ -1,9 +1,12 @@
 html,
-body {
+body {  
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
 }
 
 a {
@@ -12,7 +15,7 @@ a {
 }
 
 * {
-  box-sizing: border-box;
+  box-sizing: border-box;  
 }
 
 @media (prefers-color-scheme: dark) {
