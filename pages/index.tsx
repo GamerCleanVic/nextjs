@@ -24,8 +24,8 @@ export default function Home() {
           Subtítulo teste body
         </h2>
         <p>
-          Texto texto Body.
-        </p>
+          Texto texto Body          
+        </p>        
       </main>
 
       <footer className={styles.footer}>
