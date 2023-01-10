@@ -23,7 +23,7 @@ const Sobre = ({ nome }: Props) => {
                 <li><Link href="/sobre/joao">João</Link></li>
             </ul>
             <button onClick={handleContadorBtn} className="btn btn-primary">Aumentar</button>
-            <Script strategy="afterInteractive">
+            <Script id="my-script" strategy="afterInteractive">
                 {`window.alert('carreguei!')`}
             </Script>
         </div>
