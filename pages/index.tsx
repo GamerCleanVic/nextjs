@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -12,15 +13,15 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-          <nav className="mt-0 bg-neutral-500">
-            <a className="bg-lime-300 text-lime-900 pt-3 pb-3 pr-7 pl-7 mr-3 ml-3" href="./">HOME</a>
-            <a className="bg-lime-300 text-lime-900 pt-3 pb-3 pr-7 pl-7 mr-3 ml-3" href="./blog">BLOG</a>
-            <a className="bg-lime-300 text-lime-900 pt-3 pb-3 pr-7 pl-7 mr-3 ml-3" href="./sobre">SOBRE</a>
+          <nav className="mt-0">
+            <Link className="btn btn-primary m-3 w-32" href="./">HOME</Link>
+            <Link className="btn btn-primary m-3 w-32" href="./blog">BLOG</Link>
+            <Link className="btn btn-primary m-3 w-32" href="./sobre">SOBRE</Link>
           </nav>
-        <h1 className='text-lime-900'>
+        <h1 className='text-lime-900 text-blue-700 mt-4 mb-3'>
           TÍTULO BODY
         </h1>
-        <h2>
+        <h2 className="mb-3">
           Subtítulo teste body
         </h2>
         <p>

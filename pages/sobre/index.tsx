@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
+import Script from 'next/script';
 
 type Props = {
     nome: string;
@@ -21,7 +22,10 @@ const Sobre = ({ nome }: Props) => {
                 <li><Link href="/sobre/jonas">Jonas</Link></li>
                 <li><Link href="/sobre/joao">João</Link></li>
             </ul>
-            <button onClick={handleContadorBtn}>Aumentar</button>
+            <button onClick={handleContadorBtn} className="btn btn-primary">Aumentar</button>
+            <Script strategy="afterInteractive">
+                {`window.alert('carreguei!')`}
+            </Script>
         </div>
     );    
 }
