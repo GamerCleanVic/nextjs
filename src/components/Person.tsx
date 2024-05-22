@@ -3,33 +3,44 @@ const getWeekDay = () =>{
     return new Intl.DateTimeFormat('pt-BR', {weekday: 'long'}).format(new Date());
 }
 
-export const Person = () => {
-    const data = {
-        name: 'Elon Musk',
-        avatar: 'https://classic.exame.com/wp-content/uploads/2021/04/Elon-Musk.jpg?quality=70&strip=info&w=1024',
-        roles: [
-            'CEO da Tesla',
-            'CEO da Spacex'
-        ]
-    }
+type Props = {
+    name: string;
+    avatar: string;
+    roles: string[];
+}
 
+export const Person = ({name, avatar, roles}: Props) => {
     return(
         <>
-            <h1 style={
-                {color: "lightgreen", fontWeight: "bold"}
-            }>{data.name} - {getWeekDay()}</h1>
-            <img src={data.avatar}
-                alt={data.name}
-                className="
-                w-[20rem]
-            "/>
-            <ul className="
-                list-disc
-                list-inside
+            <div className="
+                border-[3px]
+                border-purple-600
+                rounded-[7px]
+                p-4
+                m-2
+                w-[30rem]
+                hover:border-pink-600
+                transition
+                duration-[1.5s]
             ">
-                <li>{data.roles[0]}</li>
-                <li>{data.roles[1]}</li>
-            </ul>
+                <h1 style={
+                    {color: "lightgreen", fontWeight: "bold"}
+                }
+                    className="mt-4"
+                >{name}</h1>
+                <img src={avatar}
+                    alt={name}
+                    className="
+                    w-[20rem]
+                "/>
+                <ul className="
+                    list-disc
+                    list-inside
+                ">
+                    <li>{roles[0]}</li>
+                    <li>{roles[1]}</li>
+                </ul>
+            </div>
         </>
     );
 }
