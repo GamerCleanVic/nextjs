@@ -1,5 +1,5 @@
-//Modulo 2: Exportando e Importando um Componente #2
-import {GeoForms} from '@/components/GeoForms';
+//Modulo 2: Passando props para um componente #6
+import { Person } from '@/components/Person';
 
 const Page = () =>{
   return (
@@ -7,7 +7,7 @@ const Page = () =>{
       <h1 className="font-bold text-2xl">Olá mundo!</h1>
       <h2>Algum outro texto</h2>
 
-      <GeoForms />
+      <Person />
     </div>
   );
 }
