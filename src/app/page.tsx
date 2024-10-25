@@ -1,4 +1,4 @@
-//Modulo 2: Passando props para um componente #6
+//Modulo 2: Children do componente #8
 import { Person } from '@/components/Person';
 
 const Page = () =>{
@@ -16,6 +16,10 @@ const Page = () =>{
         name = 'Jeff Bezos'
         avatar = 'https://investidorsardinha.r7.com/wp-content/uploads/2020/09/jeff-bezos-a-historia-do-homem-mais-rico-do-mundo-1-scaled.jpg'
         roles = {['CEO da Amazon', 'CEO da Twitch']}
+      />
+      <Person
+        name = 'João'
+        roles = {['Algo', 'Dono de algo']}
       />
     </div>
   );
