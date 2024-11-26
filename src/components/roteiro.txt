@@ -1,0 +1,6 @@
+*De manhã
+- Matérias Concurso
+*Tarde e Noite
+- React(Depois só Next.JS), PHP e Docker
+*Sábado
+- Aprimorar Design Gráfico q já sei mais ou meno
