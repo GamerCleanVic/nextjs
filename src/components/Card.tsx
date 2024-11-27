@@ -18,7 +18,11 @@ export const Card = ({ phrase, author }: Props) => {
 							w-96
 			">
 				<h3 className='text-3xl font-bold italic'>"{phrase}"</h3>
-				<p className='text-right text-sm'>- {author ?? "Autor Desconhecido"}</p>
+				{author &&
+					<p className='text-right text-sm'>- {author}</p>
+				}{!author &&
+					<p className='text-right text-sm'>- Autor desconhecido.</p>
+				}
 
 			</div>
 	);

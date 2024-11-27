@@ -1,4 +1,4 @@
-//Modulo 2: Operador lógico && #10
+//Modulo 2: Renderizando Listas #11
 import { Card } from '@/components/Card';
 
 const Page = () =>{
@@ -8,8 +8,8 @@ const Page = () =>{
       <h2>Algum outro texto</h2>
 
       <Card
-		phrase="Alguma frase TOP"
-		author="Coach de milhões"
+        phrase="Alguma frase TOP"
+        // author="Coach de milhões"
       />
     </div>
   );
